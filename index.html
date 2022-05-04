@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ships Status in Table</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <article>
+            <div>
+                <select name="selectedStatus" id="statusdd">
+                    <option selected disabled value="none">--Select Status--</option>
+                    <option value="active">Active</option>
+                    <option value="retired">Retired</option>
+                    <option value="destroyed">Destroyed</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+                <button onclick="handleClick()">Submit</button>
+            </div>
+            <div>
+                <table>
+                    <thead id="headTable">
+                        
+                    </thead>
+                    <tbody id="selectedList">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
